@@ -14,7 +14,7 @@ export function TechCourses({ copy }: { copy: TechCopy }) {
         <motion.div variants={fadeUp}><Eyebrow>{copy.coursesEyebrow}</Eyebrow></motion.div>
         <div className="mt-7 grid gap-4 md:grid-cols-5">
           {copy.courses.map((course, index) => (
-            <motion.div key={course} variants={fadeUp} whileHover={{ y: -5 }}>
+            <motion.div key={index} variants={fadeUp} whileHover={{ y: -5 }}>
               <Card variant="glass" padding="sm" className="h-full rounded-xl">
                 <IconBubble className="mb-4"><ToolIcon index={index} /></IconBubble>
                 <h3 className="text-sm font-semibold leading-5 text-text-primary">{course}</h3>

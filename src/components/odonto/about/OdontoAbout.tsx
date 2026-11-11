@@ -15,8 +15,8 @@ export function OdontoAbout({ copy }: { copy: OdontoCopy }) {
           <p className="mt-5 max-w-lg text-sm leading-7 text-text-secondary">{copy.aboutDescription}</p>
         </motion.div>
         <motion.div variants={stagger} className="grid gap-6 border-mode-ring lg:grid-cols-4 lg:border-l lg:pl-14">
-          {copy.careValues.map(([title, label]) => (
-            <motion.div variants={fadeUp} key={`${title}-${label}`} whileHover={{ y: -5 }} className="text-center">
+          {copy.careValues.map(([title, label], index) => (
+            <motion.div variants={fadeUp} key={index} whileHover={{ y: -5 }} className="text-center">
               <IconBubble size="lg" className="mx-auto"><LineIcon /></IconBubble>
               <p className="mx-auto mt-4 max-w-32 text-sm font-medium leading-5 text-text-primary">{title}<br />{label}</p>
             </motion.div>

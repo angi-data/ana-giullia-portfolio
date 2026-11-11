@@ -34,7 +34,7 @@ export const odontoCopy = {
       {
         title: 'Membro da Comissão de Políticas Públicas',
         meta: 'Conselho Regional de Odontologia de Pernambuco',
-        date: 'set de 2024 - o momento',
+        date: 'set de 2024 - dez de 2025',
         bullets: [
           'Gestão e análise de grandes volumes de dados do ecossistema odontológico de Pernambuco.',
           'Desenvolvimento de dashboards estratégicos no Excel para apoiar decisões regulatórias e institucionais.',
@@ -130,7 +130,7 @@ export const odontoCopy = {
       {
         title: 'Public Policy Committee Member',
         meta: 'Regional Dentistry Council of Pernambuco',
-        date: 'Sep 2024 - present',
+        date: 'Sep 2024 - Dec 2025',
         bullets: [
           'Managed and analyzed large datasets from the dentistry ecosystem in Pernambuco.',
           'Built strategic Excel dashboards to support regulatory and institutional decisions.',

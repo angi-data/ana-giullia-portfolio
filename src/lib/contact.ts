@@ -1,5 +1,5 @@
 export const profileContactLinks = {
   email: 'mailto:agiulliac@gmail.com',
   odonto: 'https://www.instagram.com/dra.anagiullia',
-  tech: 'https://www.linkedin.com/in/ana-giullia-calado',
+  tech: 'https://www.linkedin.com/in/ana-giullia-calado-a1095b255/',
 } as const

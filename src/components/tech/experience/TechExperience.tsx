@@ -13,8 +13,8 @@ export function TechExperience({ copy }: { copy: TechCopy }) {
           <div>
             <motion.div variants={fadeUp}><Eyebrow>{copy.experienceEyebrow}</Eyebrow></motion.div>
             <div className="mt-7 space-y-8">
-              {copy.experiences.map((item) => (
-                <motion.div key={`${item.role}-${item.date}`} variants={fadeUp}>
+              {copy.experiences.map((item, index) => (
+                <motion.div key={index} variants={fadeUp}>
                   <div className="grid gap-4 sm:grid-cols-[1fr_auto]">
                     <div>
                       <h3 className="text-base font-semibold text-text-primary">{item.role}</h3>

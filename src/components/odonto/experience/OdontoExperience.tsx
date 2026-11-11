@@ -12,8 +12,8 @@ export function OdontoExperience({ copy }: { copy: OdontoCopy }) {
       <motion.div variants={stagger} initial="hidden" whileInView="show" viewport={{ once: true, margin: '-90px' }}>
         <motion.div variants={fadeUp}><Eyebrow>{copy.experienceEyebrow}</Eyebrow></motion.div>
         <div className="mt-7 grid gap-5 md:grid-cols-2">
-          {copy.experiences.map((item) => (
-            <motion.div key={`${item.title}-${item.meta}-${item.date}`} variants={fadeUp}>
+          {copy.experiences.map((item, index) => (
+            <motion.div key={index} variants={fadeUp}>
               <Card variant="glass" className="h-full rounded-xl">
                 <h3 className="text-base font-semibold leading-6 text-text-primary">{item.title}</h3>
                 <p className="mt-1 text-sm text-text-secondary">{item.meta}</p>
